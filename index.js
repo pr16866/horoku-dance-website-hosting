@@ -4,8 +4,8 @@ const fs=require("fs");
 const app=express();
 const port=process.env.PORT||80;
 const mongoose = require('mongoose');
-const { text } = require("express");
-mongoose.connect('mongodb://localhost/formdata', {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("connected")).catch((err)=>console.log(err));
+
+mongoose.connect('mongodb://https://dance-website-by-piyush.herokuapp.com/formdata', {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("connected")).catch((err)=>console.log(err));
 
 const formSchema = new mongoose.Schema({
     name: String,
