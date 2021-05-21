@@ -2,7 +2,7 @@ const express=require("express");
 const path=require("path");
 const fs=require("fs");
 const app=express();
-const port=80;
+const port=process.env.PORT||80;
 const mongoose = require('mongoose');
 const { text } = require("express");
 mongoose.connect('mongodb://localhost/formdata', {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("connected")).catch((err)=>console.log(err));
