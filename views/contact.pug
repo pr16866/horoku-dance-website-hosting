@@ -1,0 +1,21 @@
+extends base.pug
+block scripts
+      script 
+        include ../static/contact.js
+block style 
+      style 
+        include ../static/contact.css 
+      style 
+        include ../static/style.css
+block content 
+   .container 
+       h1 fill this form our team will contact you 
+       .form 
+          form(action="/contact", method="post")
+                 input(type="text" name="name" id="name" placeholder="Enter your name")
+                 input(type="number" name="age" id="age" placeholder="Enter your age")
+                 input(type="number" name="number" id="number" placeholder="Enter your phone number")
+                 input(type="email" name="email" id="email" placeholder="Enter your email")
+                 input(type="password" name="password" id="password" placeholder="Enter password")
+                 button#btn 
+                  | register now

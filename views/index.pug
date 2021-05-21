@@ -1,0 +1,57 @@
+doctype html 
+html
+  head
+     style 
+       include ../static/style.css
+  body
+    nav.nav 
+       ul 
+         li #[a(href ="/") home] 
+         li #[a(href ="/") about us] 
+         li #[a(href="/") Our Services]
+         li #[a(href="/contact") contact us]
+
+
+    section.intro
+      .intro_heding  
+         h2 welcome to piyush dance academy 
+         h6  eat sleep  dance repeate
+    section.services 
+      .heading 
+         h2 Our services
+      #main_box   
+         div.box
+           h2 classical 
+           
+           div.box_content
+               p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, exercitationem!
+               img#img1(src="img1.png", alt="error")
+
+         div.box 
+            h2 hip-hop
+            div.box_content
+               p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, exercitationem!
+               img#img2(src="img2.png", alt="error")
+
+         div.box 
+            h2 katthak
+            div.box_content
+               p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, exercitationem!
+               img#img3(src="img3.png", alt="error")
+
+    section.sponser 
+        div.heading
+          h2 our sponsers 
+        .main_box 
+          div.sponser_box
+            img(src="sp1.png", alt="error")
+          div.sponser_box
+            img(src="sp2.png", alt="error")
+          div.sponser_box
+            img(src="sp3.png", alt="error")
+          div.sponser_box
+            img(src="sp4.png", alt="error")
+
+    footer.footer 
+      p  copyright © made by piyush thakur |all rights reserved
+    

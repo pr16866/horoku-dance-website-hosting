@@ -1,0 +1,21 @@
+doctype html 
+html
+ head
+    title piyush dance academy
+    block scripts
+      script 
+        include ../static/index.js
+
+    block style 
+      style 
+        include ../static/style.css
+body
+    nav.nav 
+       ul 
+         li #[a(href ="/") home] 
+         li #[a(href ="/") about us] 
+         li #[a(href="/") Our Services]
+         li #[a(href="/contact") contact us]
+    block content
+    footer.footer 
+      p  copyright © made by piyush thakur |all rights reserved 
